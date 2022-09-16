@@ -1,0 +1,76 @@
+.technology {
+  display: flex;
+  color: var(--color-white);
+  margin-left: 16.5rem;
+  gap: 10rem;
+  &__nav {
+    font-family: "Bellefair", serif;
+    font-size: 3.2rem;
+
+    margin-top: 10rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    li {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background-color: var(--color-dark);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      display: inline-block;
+      transition: all 0.3s;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        border: 1px solid #fff;
+      }
+
+      &.active {
+        background-color: var(--color-white);
+        a {
+          color: var(--color-dark);
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      line-height: 8rem;
+      width: 100%;
+      text-decoration: none;
+      color: var(--color-white);
+    }
+  }
+  &__details {
+    margin-top: 10rem;
+  }
+  .technology__subtitle {
+    font-size: 1.6rem;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: var(--color-grey);
+  }
+  .technology__title {
+    font-family: "Bellefair", serif;
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  .technology__description {
+    font-size: 1.8rem;
+    font-family: "Barlow", sans-serif;
+    line-height: 3.2rem;
+    color: var(--color-grey);
+    margin-right: 3.5rem;
+    margin-top: 2rem;
+  }
+  &__img {
+    margin-top: 2rem;
+  }
+}
