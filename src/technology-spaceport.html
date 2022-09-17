@@ -11,26 +11,66 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <script defer type="module">
+      import "./styles/pages/technology.scss";
+    </script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <header class="header">
+      <img src="assets/shared/logo.svg" alt="logo" />
+      <ul>
+        <li>
+          <a href="/"><span>00</span> Home</a>
+        </li>
+        <li>
+          <a href="/destination-moon.html"><span>01</span> Destination</a>
+        </li>
+        <li>
+          <a href="/crew-commander.html"><span>02</span> Crew</a>
+        </li>
+        <li class="active">
+          <a href="/technology-vehicle.html"><span>03</span> Technology</a>
+        </li>
+      </ul>
+    </header>
 
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Spaceport
-
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch. -->
+    <div class="heading-secondary">
+      <p><span>03</span>Space launch 101</p>
+    </div>
+    <main>
+      <article class="technology">
+        <nav class="technology__nav">
+          <ul>
+            <li>
+              <a href="technology-vehicle.html">1</a>
+            </li>
+            <li class="active">
+              <a href="technology-spaceport.html">2</a>
+            </li>
+            <li>
+              <a href="technology-capsule.html">3</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="technology__details">
+          <div class="technology__subtitle">The terminology...</div>
+          <h1 class="technology__title">Spaceport</h1>
+          <p class="technology__description">
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth’s rotation for
+            launch.
+          </p>
+        </div>
+        <img
+          src="/assets/technology/image-spaceport-portrait.jpg"
+          alt="launching rocket"
+          class="technology__img"
+        />
+      </article>
+    </main>
   </body>
 </html>

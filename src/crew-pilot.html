@@ -11,22 +11,56 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <script defer type="module">
+      import "./styles/pages/crew.scss";
+    </script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <header class="header">
+      <img src="assets/shared/logo.svg" alt="logo" />
+      <ul>
+        <li>
+          <a href="/"><span>00</span> Home</a>
+        </li>
+        <li>
+          <a href="/destination-moon.html"><span>01</span> Destination</a>
+        </li>
+        <li class="active">
+          <a href="/crew-commander.html"><span>02</span> Crew</a>
+        </li>
+        <li>
+          <a href="/technology-vehicle.html"><span>03</span> Technology</a>
+        </li>
+      </ul>
+    </header>
 
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer.  -->
+    <div class="heading-secondary">
+      <p><span>02</span>Meet your crew</p>
+    </div>
+    <main>
+      <article class="person">
+        <div class="person__details">
+          <p class="person__title">Pilot</p>
+          <p class="person__name">Victor Glover</p>
+          <p class="person__description">
+            Pilot on the first operational flight of the SpaceX Crew Dragon to
+            the International Space Station. Glover is a commander in the U.S.
+            Navy where he pilots an F/A-18.He was a crew member of Expedition
+            64, and served as a station systems flight engineer.
+          </p>
+        </div>
+        <div>
+          <img src="assets/crew/image-victor-glover.webp" alt="Victor Glover" />
+        </div>
+      </article>
+      <nav>
+        <a href="crew-commander.html"></a>
+        <a href="crew-specialist.html"></a>
+        <a class="active" href="crew-pilot.html"></a>
+        <a href="crew-engineer.html"></a>
+      </nav>
+    </main>
   </body>
 </html>

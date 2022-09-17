@@ -11,21 +11,59 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <script defer type="module">
+      import "./styles/pages/crew.scss";
+    </script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <header class="header">
+      <img src="assets/shared/logo.svg" alt="logo" />
+      <ul>
+        <li>
+          <a href="/"><span>00</span> Home</a>
+        </li>
+        <li>
+          <a href="/destination-moon.html"><span>01</span> Destination</a>
+        </li>
+        <li class="active">
+          <a href="/crew-commander.html"><span>02</span> Crew</a>
+        </li>
+        <li>
+          <a href="/technology-vehicle.html"><span>03</span> Technology</a>
+        </li>
+      </ul>
+    </header>
 
-  02 Meet your crew
-
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist. -->
+    <div class="heading-secondary">
+      <p><span>02</span>Meet your crew</p>
+    </div>
+    <main>
+      <article class="person">
+        <div class="person__details">
+          <p class="person__title">Mission Specialist</p>
+          <p class="person__name">Mark Shuttleworth</p>
+          <p class="person__description">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+            company behind the Linux-based Ubuntu operating system. Shuttleworth
+            became the first South African to travel to space as a space
+            tourist.
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/crew/image-mark-shuttleworth.webp"
+            alt="Mark Shuttleworth"
+          />
+        </div>
+      </article>
+      <nav>
+        <a href="crew-commander.html"></a>
+        <a class="active" href="crew-specialist.html"></a>
+        <a href="crew-pilot.html"></a>
+        <a href="crew-engineer.html"></a>
+      </nav>
+    </main>
   </body>
 </html>

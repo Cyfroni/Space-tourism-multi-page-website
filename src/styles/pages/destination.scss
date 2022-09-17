@@ -1,3 +1,6 @@
+@use "../global.scss";
+@use "../elements/destination.scss";
+
 body {
   background-image: url("assets/destination/background-destination-desktop.jpg");
   background-size: cover;

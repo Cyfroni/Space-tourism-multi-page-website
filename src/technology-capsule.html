@@ -11,26 +11,66 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <script defer type="module">
+      import "./styles/pages/technology.scss";
+    </script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <header class="header">
+      <img src="assets/shared/logo.svg" alt="logo" />
+      <ul>
+        <li>
+          <a href="/"><span>00</span> Home</a>
+        </li>
+        <li>
+          <a href="/destination-moon.html"><span>01</span> Destination</a>
+        </li>
+        <li>
+          <a href="/crew-commander.html"><span>02</span> Crew</a>
+        </li>
+        <li class="active">
+          <a href="/technology-vehicle.html"><span>03</span> Technology</a>
+        </li>
+      </ul>
+    </header>
 
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained. -->
+    <div class="heading-secondary">
+      <p><span>03</span>Space launch 101</p>
+    </div>
+    <main>
+      <article class="technology">
+        <nav class="technology__nav">
+          <ul>
+            <li>
+              <a href="technology-vehicle.html">1</a>
+            </li>
+            <li>
+              <a href="technology-spaceport.html">2</a>
+            </li>
+            <li class="active">
+              <a href="technology-capsule.html">3</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="technology__details">
+          <div class="technology__subtitle">The terminology...</div>
+          <h1 class="technology__title">Space capsule</h1>
+          <p class="technology__description">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+        </div>
+        <img
+          src="/assets/technology/image-space-capsule-portrait.jpg"
+          alt="launching rocket"
+          class="technology__img"
+        />
+      </article>
+    </main>
   </body>
 </html>
