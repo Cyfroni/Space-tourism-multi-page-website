@@ -1,10 +1,6 @@
 .person {
-  display: flex;
-
-  &__details {
-    margin-left: 16.5rem;
-    margin-top: 15rem;
-  }
+  width: 50%;
+  margin-top: 15rem;
 
   &__title {
     text-transform: uppercase;
@@ -22,39 +18,104 @@
 
     margin-bottom: 2rem;
   }
+
   &__description {
     font-size: 1.8rem;
     line-height: 3.2rem;
     font-family: "Barlow", sans-serif;
     color: var(--color-grey);
-    margin-right: 20rem;
+    margin-right: 25rem;
   }
 
-  > * {
-    flex: 1;
+  &__photo {
+    position: absolute;
+    bottom: 0;
+    right: 11rem;
+
+    img {
+      width: 100%;
+    }
   }
-  img {
-    display: inline-block;
-    margin-top: -5.8rem;
+
+  &__navigation {
+    position: absolute;
+    bottom: 10rem;
+
+    ul {
+      display: flex;
+      gap: 2.5rem;
+      list-style-type: none;
+    }
+
+    li {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.17;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
-nav {
-  display: flex;
-  gap: 2.5rem;
+@media (max-width: 1200px) {
+  .person {
+    &__photo {
+      right: 5.5rem;
+    }
+  }
+}
 
-  margin-top: -10rem;
-  margin-left: 16.5rem;
+@media (max-width: 1000px) {
+  .person {
+    flex-grow: 1;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto 0 auto;
 
-  > * {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.17;
+    &__navigation {
+      position: initial;
+      margin: 5rem auto;
+    }
 
-    &.active {
-      opacity: 1;
+    &__photo {
+      position: relative;
+      right: 0;
+      padding-left: 5rem;
+      margin-top: auto;
+      order: 5;
+    }
+
+    &__description {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .person {
+    width: 100%;
+    &__photo {
+      width: 70%;
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+      order: -5;
+    }
+
+    &__navigation {
+      order: -3;
     }
   }
 }
