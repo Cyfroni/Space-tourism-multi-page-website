@@ -35,22 +35,27 @@
         </li>
       </ul>
     </header>
-    <div class="heading-secondary">
-      <p><span>01</span>Pick your destination</p>
-    </div>
+
     <main>
-      <img src="assets/destination/image-mars.webp" alt="Moon image" />
-      <section class="planets">
-        <ul class="planets__navigation">
+      <div class="heading-secondary">
+        <p><span>01</span>Pick your destination</p>
+      </div>
+
+      <article class="planet">
+        <div class="planet__image">
+          <img src="assets/destination/image-titan.webp" alt="Titan image" />
+        </div>
+
+        <ul class="planet__navigation">
           <li><a href="destination-moon.html">Moon</a></li>
           <li><a href="destination-mars.html">Mars</a></li>
           <li><a href="destination-europa.html">Europa</a></li>
           <li class="active"><a href="destination-titan.html">Titan</a></li>
         </ul>
 
-        <article class="planet">
-          <h1>Titan</h1>
-          <p class="planets__description">
+        <div class="planet__details">
+          <h1 class="planet__name">Titan</h1>
+          <p class="planet__description">
             The only moon known to have a dense atmosphere other than Earth,
             Titan is a home away from home (just a few hundred degrees colder!).
             As a bonus, you get striking views of the Rings of Saturn.
@@ -65,8 +70,8 @@
               <p class="info-value">7 years</p>
             </div>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
     </main>
   </body>
 </html>

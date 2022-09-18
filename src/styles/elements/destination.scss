@@ -1,16 +1,17 @@
-main {
-  height: 60vh;
+.planet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+  column-gap: 10rem;
 
-  display: flex;
-  align-items: flex-end;
-
-  img {
-    margin: 0rem 20rem;
+  &__image {
+    grid-row: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
   }
-}
 
-.planets {
-  width: 44rem;
   &__navigation {
     display: flex;
     list-style-type: none;
@@ -24,14 +25,29 @@ main {
 
     li {
       padding-bottom: 1rem;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s;
+
       &.active {
         color: var(--color-white);
         border-bottom: 3px solid var(--color-white);
       }
+      &:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 
-  h1 {
+  &__details {
+    margin-left: auto;
+  }
+
+  &__name {
     font-size: 10rem;
     font-family: "Bellefair", serif;
     color: var(--color-white);
@@ -46,28 +62,65 @@ main {
     line-height: 3.2rem;
     color: var(--color-grey);
   }
+
+  &__info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 7rem;
+
+    .info {
+      flex: 1;
+      text-transform: uppercase;
+    }
+
+    .info-label {
+      color: var(--color-grey);
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 2.36px;
+    }
+
+    .info-value {
+      margin-top: 1rem;
+      font-family: "Bellefair", serif;
+      font-size: 2.8rem;
+    }
+  }
 }
 
-.planet__info {
-  display: flex;
-  gap: 2rem;
-  margin-top: 7rem;
+@media (max-width: 1000px) {
+  .planet {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 70%;
+    margin: 7rem auto 0 auto;
+
+    &__image {
+      grid-row: initial;
+      margin-top: 0rem;
+      margin-bottom: 8rem;
+      img {
+        width: 70%;
+      }
+    }
+
+    &__details {
+      text-align: center;
+    }
+  }
 }
 
-.info {
-  flex: 1;
-  text-transform: uppercase;
-}
-
-.info-label {
-  color: var(--color-grey);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 2.36px;
-}
-
-.info-value {
-  margin-top: 1rem;
-  font-family: "Bellefair", serif;
-  font-size: 2.8rem;
+@media (max-width: 550px) {
+  .planet {
+    width: 100%;
+    &__image {
+      img {
+        width: 50%;
+      }
+    }
+    &__info {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
 }

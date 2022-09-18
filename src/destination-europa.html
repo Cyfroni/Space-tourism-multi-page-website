@@ -35,22 +35,27 @@
         </li>
       </ul>
     </header>
-    <div class="heading-secondary">
-      <p><span>01</span>Pick your destination</p>
-    </div>
+
     <main>
-      <img src="assets/destination/image-europa.webp" alt="Moon image" />
-      <section class="planets">
-        <ul class="planets__navigation">
+      <div class="heading-secondary">
+        <p><span>01</span>Pick your destination</p>
+      </div>
+
+      <article class="planet">
+        <div class="planet__image">
+          <img src="assets/destination/image-europa.webp" alt="Europa image" />
+        </div>
+
+        <ul class="planet__navigation">
           <li><a href="destination-moon.html">Moon</a></li>
           <li><a href="destination-mars.html">Mars</a></li>
           <li class="active"><a href="destination-europa.html">Europa</a></li>
           <li><a href="destination-titan.html">Titan</a></li>
         </ul>
 
-        <article class="planet">
-          <h1>Europa</h1>
-          <p class="planets__description">
+        <div class="planet__details">
+          <h1 class="planet__name">Europa</h1>
+          <p class="planet__description">
             The smallest of the four Galilean moons orbiting Jupiter, Europa is
             a winter lover’s dream. With an icy surface, it’s perfect for a bit
             of ice skating, curling, hockey, or simple relaxation in your snug
@@ -66,8 +71,8 @@
               <p class="info-value">3 years</p>
             </div>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
     </main>
   </body>
 </html>
