@@ -36,10 +36,11 @@
       </ul>
     </header>
 
-    <div class="heading-secondary">
-      <p><span>03</span>Space launch 101</p>
-    </div>
     <main>
+      <div class="heading-secondary">
+        <p><span>03</span>Space launch 101</p>
+      </div>
+
       <article class="technology">
         <nav class="technology__nav">
           <ul>
@@ -65,11 +66,16 @@
             sight on the launch pad!
           </p>
         </div>
-        <img
-          src="/assets/technology/image-launch-vehicle-portrait.jpg"
-          alt="launching rocket"
-          class="technology__img"
-        />
+        <picture class="technology__image">
+          <source
+            media="(max-width: 1000px)"
+            srcset="/assets/technology/image-launch-vehicle-landscape.jpg"
+          />
+          <img
+            src="/assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="launching rocket"
+          />
+        </picture>
       </article>
     </main>
   </body>

@@ -15,6 +15,7 @@
   &__navigation {
     display: flex;
     list-style-type: none;
+    height: 3.4rem;
     gap: 3rem;
     color: var(--color-grey);
     font-size: 1.8rem;
@@ -118,6 +119,11 @@
         width: 50%;
       }
     }
+
+    &__navigation {
+      height: 4.2rem;
+    }
+
     &__info {
       flex-direction: column;
       gap: 5rem;

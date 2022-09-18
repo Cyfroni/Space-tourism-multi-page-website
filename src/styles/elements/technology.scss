@@ -1,8 +1,7 @@
 .technology {
   display: flex;
   color: var(--color-white);
-  margin-left: 16.5rem;
-  gap: 10rem;
+  gap: 7rem;
   &__nav {
     font-family: "Bellefair", serif;
     font-size: 3.2rem;
@@ -48,21 +47,21 @@
   &__details {
     margin-top: 10rem;
   }
-  .technology__subtitle {
+  &__subtitle {
     font-size: 1.6rem;
     font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     color: var(--color-grey);
   }
-  .technology__title {
+  &__title {
     font-family: "Bellefair", serif;
     font-size: 5.6rem;
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 1rem;
   }
-  .technology__description {
+  &__description {
     font-size: 1.8rem;
     font-family: "Barlow", sans-serif;
     line-height: 3.2rem;
@@ -70,7 +69,53 @@
     margin-right: 3.5rem;
     margin-top: 2rem;
   }
-  &__img {
+  &__image {
     margin-top: 2rem;
+    margin-right: -16.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .technology {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+
+    &__nav {
+      margin: 0;
+      ul {
+        flex-direction: row;
+      }
+    }
+
+    &__details {
+      margin-top: 0;
+    }
+
+    &__description {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    &__image {
+      order: -5;
+      margin-top: 5rem;
+      margin-right: 0;
+      width: 100vw;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .technology {
+    &__description {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
